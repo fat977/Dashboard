@@ -1,0 +1,41 @@
+@import '../../Assets/style/variables';
+
+.register , .login{
+    background-color: $second-color;
+    .details{
+        color: $main-color;
+    }
+}
+
+/* .login{
+    height: 100vh;
+}
+ */
+.register-card ,.login-card{
+    border-radius: 50px !important;
+    border-top: 5px solid $blue-color !important;
+    .input-group-text {
+        border-radius: 0 !important;
+    }
+    .social-icons{
+        font-size: 20px;
+        .fa-facebook {
+            background-color: $white-color;
+            color: $blue-color !important;
+        }
+        .fa-google{
+            background-color: $white-color;
+            color: red !important;
+        }
+    }
+   
+}
+
+@media screen and (min-width: 900px) {
+    .login{
+        height: 100vh;
+    }
+ }
+
+
+

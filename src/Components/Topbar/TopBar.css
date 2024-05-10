@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --bg-color: rgb(40, 39, 39) ;
+}
+
+.top-bar {
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 555555;
+  padding: 0 20px;
+  color: rgb(213, 222, 222);
+  transition: background-color 450ms ease-in-out;
+}
+.top-bar .dropdown .btn-primary {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.top-bar .dropdown .btn-primary::after {
+  content: none !important;
+}
+.top-bar .dropdown .btn-primary .badge {
+  top: auto !important;
+}
+.top-bar .dropdown .dropdown-menu hr {
+  margin: 5px !important;
+}
+.top-bar a {
+  text-decoration: none !important;
+  font-size: 16px;
+  color: rgb(40, 39, 39);
+  transition: 0.3s;
+  border-radius: 6px;
+}/*# sourceMappingURL=TopBar.css.map */

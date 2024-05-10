@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --bg-color: rgb(40, 39, 39) ;
+}
+
+.box {
+  color: #fff;
+  border-radius: 5px;
+}
+.box .small-box-footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  display: block;
+  padding: 3px 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  z-index: 10;
+}
+.box .icon {
+  transition: transform 3s;
+  color: rgba(54, 52, 52, 0.5);
+}
+.box .icon:hover {
+  transform: scale(1.1);
+}
+
+.box-primary {
+  background-color: #17a2b8;
+}
+
+.box-success {
+  background-color: #28a745;
+}
+
+.box-warning {
+  background-color: #ffc107;
+}
+
+.box-danger {
+  background-color: #dc3545;
+}/*# sourceMappingURL=index.css.map */

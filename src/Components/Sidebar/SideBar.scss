@@ -1,0 +1,41 @@
+@import '../../Assets/style/variables';
+
+.side-bar{
+    //background-color:  $second-color;
+    background-color: var(--bg-color);
+    top: 70px;
+    left: 0;
+    z-index: 555;
+    height: 100vh;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    transition: background-color 450ms ease-in-out;
+
+    a{
+        text-decoration: none !important;
+        font-size: 18px;
+        color: $main-color;
+        transition: 0.3s;
+        border-radius: 6px;
+        margin: 0 8px;
+        font-weight: 500;
+
+        &:hover{
+            color: $second-color;
+            background-color:$main-color ;
+        }
+    }
+
+    .active{
+        color: $second-color;
+        background-color:$main-color ;
+        padding: 4px;
+
+        &:hover{
+            color: $second-color;
+        }
+    }
+}
+
+[data-theme="dark"]{
+    background-color: black !important;
+}

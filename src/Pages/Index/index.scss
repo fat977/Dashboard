@@ -1,0 +1,33 @@
+@import '../../Assets/style/variables';
+
+.box {
+    color: $white-color;
+    border-radius: 5px;
+    .small-box-footer {
+        background-color: rgba(0, 0, 0, .1);
+        color: $white-color;
+        display: block;
+        padding: 3px 0;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        z-index: 10;
+    }
+
+    .icon {
+        transition: transform 3s;
+        color: rgba(54, 52, 52, 0.5);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+$classes : ("primary" #17a2b8, "success" #28a745, "warning" #ffc107, "danger" #dc3545);
+
+@each $name, $color in $classes {
+    .box-#{$name} {
+        background-color: $color;
+    }
+}

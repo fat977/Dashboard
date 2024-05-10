@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --bg-color: rgb(40, 39, 39) ;
+}
+
+/* .toggle-container{
+    position: absolute;
+//right: 11em;
+} */
+.toggle {
+  display: none;
+}
+
+.toggle + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(40, 39, 39);
+}
+
+.toggle + label::before {
+  content: "";
+  width: 2em;
+  height: 1em;
+  border-radius: 1em;
+  background-color: rgb(129, 129, 119);
+  margin-right: 1rem;
+  transition: background-color 450ms ease-in-out;
+}
+
+.toggle + label::after {
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 1em;
+  background-color: #fff;
+  position: absolute;
+  left: 1.2rem;
+  transition: background-color 450ms ease-in-out;
+}
+
+.toggle:checked + label::after {
+  transform: translateX(100%);
+  background-color: rgb(40, 39, 39);
+  border-radius: 1em;
+}/*# sourceMappingURL=Toggle.css.map */

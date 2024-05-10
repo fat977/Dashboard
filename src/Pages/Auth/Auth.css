@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --bg-color: rgb(40, 39, 39) ;
+}
+
+.register, .login {
+  background-color: rgb(40, 39, 39);
+}
+.register .details, .login .details {
+  color: rgb(213, 222, 222);
+}
+
+.login {
+  height: 100vh;
+}
+
+.register-card, .login-card {
+  border-radius: 50px !important;
+  border-top: 5px solid #007bff !important;
+}
+.register-card .input-group-text, .login-card .input-group-text {
+  border-radius: 0 !important;
+}
+.register-card .facebook, .login-card .facebook {
+  background-color: #007bff !important;
+  color: #fff !important;
+}/*# sourceMappingURL=Auth.css.map */

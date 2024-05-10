@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --bg-color: rgb(40, 39, 39) ;
+}
+
+.side-bar {
+  background-color: var(--bg-color);
+  top: 70px;
+  left: 0;
+  z-index: 555;
+  height: 100vh;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  transition: background-color 450ms ease-in-out;
+}
+.side-bar a {
+  text-decoration: none !important;
+  font-size: 18px;
+  color: rgb(213, 222, 222);
+  transition: 0.3s;
+  border-radius: 6px;
+  margin: 0 8px;
+  font-weight: 500;
+}
+.side-bar a:hover {
+  color: rgb(40, 39, 39);
+  background-color: rgb(213, 222, 222);
+}
+.side-bar .active {
+  color: rgb(40, 39, 39);
+  background-color: rgb(213, 222, 222);
+  padding: 4px;
+}
+.side-bar .active:hover {
+  color: rgb(40, 39, 39);
+}
+
+[data-theme=dark] {
+  background-color: black !important;
+}/*# sourceMappingURL=SideBar.css.map */
